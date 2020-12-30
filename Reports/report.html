@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8"/>
     <title>Test Report</title>
-    <link href="assets/style.css" rel="stylesheet" type="text/css"/></head>
-  <body onLoad="init()">
-    <script>/* This Source Code Form is subject to the terms of the Mozilla Public
+    <link href="assets/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body onLoad="init()">
+<script>/* This Source Code Form is subject to the terms of the Mozilla Public
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
@@ -241,62 +242,119 @@ function filter_table(elem) { // eslint-disable-line no-unused-vars
     const not_found_message = document.getElementById('not-found-message');
     not_found_message.hidden = !all_rows_hidden;
 }
+
 </script>
-    <h1>report.html</h1>
-    <p>Report generated on 09-Dec-2020 at 00:28:08 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.0</p>
-    <h2>Environment</h2>
-    <table id="environment">
-      <tr>
+<h1>report.html</h1>
+<p>Report generated on 09-Dec-2020 at 00:28:08 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+    v3.1.0</p>
+<h2>Environment</h2>
+<table id="environment">
+    <tr>
         <td>Module Name</td>
-        <td>Customer</td></tr>
-      <tr>
+        <td>Customer</td>
+    </tr>
+    <tr>
         <td>Packages</td>
-        <td>{"pluggy": "0.13.1", "py": "1.9.0", "pytest": "6.1.2"}</td></tr>
-      <tr>
+        <td>{"pluggy": "0.13.1", "py": "1.9.0", "pytest": "6.1.2"}</td>
+    </tr>
+    <tr>
         <td>Platform</td>
-        <td>Windows-10-10.0.19041-SP0</td></tr>
-      <tr>
+        <td>Windows-10-10.0.19041-SP0</td>
+    </tr>
+    <tr>
         <td>Project Name</td>
-        <td>nop-commerce</td></tr>
-      <tr>
+        <td>nop-commerce</td>
+    </tr>
+    <tr>
         <td>Python</td>
-        <td>3.6.4</td></tr>
-      <tr>
+        <td>3.6.4</td>
+    </tr>
+    <tr>
         <td>Tester</td>
-        <td>D.V.M.Kameswari</td></tr></table>
-    <h2>Summary</h2>
-    <p>2 tests ran in 12.26 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
-    <h2>Results</h2>
-    <table id="results-table">
-      <thead id="results-table-head">
-        <tr>
-          <th class="sortable result initial-sort" col="result">Result</th>
-          <th class="sortable" col="name">Test</th>
-          <th class="sortable" col="duration">Duration</th>
-          <th class="sortable links" col="links">Links</th></tr>
-        <tr hidden="true" id="not-found-message">
-          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">testCases/test_login.py::Test_Login::test_verify_login</td>
-          <td class="col-duration">11.23</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw0] win32 -- Python 3.6.4 c:\users\dev team\pycharmprojects\seleniumproject\venv\scripts\python.exe<br/>[gw0] win32 -- Python 3.6.4 c:\users\dev team\pycharmprojects\seleniumproject\venv\scripts\python.exe[gw0] win32 -- Python 3.6.4 c:\users\dev team\pycharmprojects\seleniumproject\venv\scripts\python.exe[gw0] win32 -- Python 3.6.4 c:\users\dev team\pycharmprojects\seleniumproject\venv\scripts\python.exe<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_login.py:13 Test case : Verifying login with valid credentials
-INFO     root:test_login.py:14 Test case name: test_verify_login
-INFO     root:test_login.py:22 Test case PASSED
-INFO     root:test_login.py:28 *****************************************<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">testCases/test_login.py::Test_Login::test_verify_home_page_title</td>
-          <td class="col-duration">8.30</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log">[gw1] win32 -- Python 3.6.4 c:\users\dev team\pycharmprojects\seleniumproject\venv\scripts\python.exe<br/>[gw1] win32 -- Python 3.6.4 c:\users\dev team\pycharmprojects\seleniumproject\venv\scripts\python.exe[gw1] win32 -- Python 3.6.4 c:\users\dev team\pycharmprojects\seleniumproject\venv\scripts\python.exe[gw1] win32 -- Python 3.6.4 c:\users\dev team\pycharmprojects\seleniumproject\venv\scripts\python.exe<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_login.py:32 Test case : Verifying title of the home page
-INFO     root:test_login.py:33 Test case name: verify_home_page_title
-INFO     root:test_login.py:38 Test case PASSED<br/></div></td></tr></tbody></table></body></html>
+        <td>D.V.M.Kameswari</td>
+    </tr>
+</table>
+<h2>Summary</h2>
+<p>2 tests ran in 12.26 seconds. </p>
+<p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter"
+                                                                                     data-test-result="passed"
+                                                                                     hidden="true"
+                                                                                     name="filter_checkbox"
+                                                                                     onChange="filter_table(this)"
+                                                                                     type="checkbox"/><span
+        class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true"
+                                               hidden="true" name="filter_checkbox" onChange="filter_table(this)"
+                                               type="checkbox"/><span class="skipped">0 skipped</span>, <input
+        checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox"
+        onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true"
+                                                                                                    class="filter"
+                                                                                                    data-test-result="error"
+                                                                                                    disabled="true"
+                                                                                                    hidden="true"
+                                                                                                    name="filter_checkbox"
+                                                                                                    onChange="filter_table(this)"
+                                                                                                    type="checkbox"/><span
+        class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true"
+                                              hidden="true" name="filter_checkbox" onChange="filter_table(this)"
+                                              type="checkbox"/><span class="xfailed">0 expected failures</span>, <input
+        checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox"
+        onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+<h2>Results</h2>
+<table id="results-table">
+    <thead id="results-table-head">
+    <tr>
+        <th class="sortable result initial-sort" col="result">Result</th>
+        <th class="sortable" col="name">Test</th>
+        <th class="sortable" col="duration">Duration</th>
+        <th class="sortable links" col="links">Links</th>
+    </tr>
+    <tr hidden="true" id="not-found-message">
+        <th colspan="4">No results found. Try to check the filters</th>
+    </tr>
+    </thead>
+    <tbody class="passed results-table-row">
+    <tr>
+        <td class="col-result">Passed</td>
+        <td class="col-name">testCases/test_login.py::Test_Login::test_verify_login</td>
+        <td class="col-duration">11.23</td>
+        <td class="col-links"></td>
+    </tr>
+    <tr>
+        <td class="extra" colspan="4">
+            <div class="log">[gw0] win32 -- Python 3.6.4 c:\users\dev
+                team\pycharmprojects\seleniumproject\venv\scripts\python.exe<br/>[gw0] win32 -- Python 3.6.4
+                c:\users\dev team\pycharmprojects\seleniumproject\venv\scripts\python.exe[gw0] win32 -- Python 3.6.4
+                c:\users\dev team\pycharmprojects\seleniumproject\venv\scripts\python.exe[gw0] win32 -- Python 3.6.4
+                c:\users\dev team\pycharmprojects\seleniumproject\venv\scripts\python.exe<br/>
+                -------------------------------Captured log call-------------------------------- <br/>INFO
+                root:test_login.py:13 Test case : Verifying login with valid credentials
+                INFO root:test_login.py:14 Test case name: test_verify_login
+                INFO root:test_login.py:22 Test case PASSED
+                INFO root:test_login.py:28 *****************************************<br/></div>
+        </td>
+    </tr>
+    </tbody>
+    <tbody class="passed results-table-row">
+    <tr>
+        <td class="col-result">Passed</td>
+        <td class="col-name">testCases/test_login.py::Test_Login::test_verify_home_page_title</td>
+        <td class="col-duration">8.30</td>
+        <td class="col-links"></td>
+    </tr>
+    <tr>
+        <td class="extra" colspan="4">
+            <div class="log">[gw1] win32 -- Python 3.6.4 c:\users\dev
+                team\pycharmprojects\seleniumproject\venv\scripts\python.exe<br/>[gw1] win32 -- Python 3.6.4
+                c:\users\dev team\pycharmprojects\seleniumproject\venv\scripts\python.exe[gw1] win32 -- Python 3.6.4
+                c:\users\dev team\pycharmprojects\seleniumproject\venv\scripts\python.exe[gw1] win32 -- Python 3.6.4
+                c:\users\dev team\pycharmprojects\seleniumproject\venv\scripts\python.exe<br/>
+                -------------------------------Captured log call-------------------------------- <br/>INFO
+                root:test_login.py:32 Test case : Verifying title of the home page
+                INFO root:test_login.py:33 Test case name: verify_home_page_title
+                INFO root:test_login.py:38 Test case PASSED<br/></div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

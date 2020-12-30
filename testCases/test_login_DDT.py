@@ -4,6 +4,7 @@ from pageobjects.LoginPage import Login
 from utilities.customLogger import LogGen
 import time
 
+
 class Test_Login_DDT:
     path = ".\\testdata\\employee_data.xlsx"
     base_url = get_login_info.get_base_url()
@@ -16,7 +17,7 @@ class Test_Login_DDT:
         self.driver = setup
         self.lp = Login(self.driver)
         list_result = []
-        for i in range(2, row+1):
+        for i in range(2, row + 1):
             username = ExcelUtils.read_excel_file_data(self.path, i, 1)
             password = ExcelUtils.read_excel_file_data(self.path, i, 2)
             expected_result = ExcelUtils.read_excel_file_data(self.path, i, 3)
@@ -51,4 +52,3 @@ class Test_Login_DDT:
         finally:
             self.driver.close()
         self.logger.info("***********Test case test_verify_login_DDT has completed********")
-

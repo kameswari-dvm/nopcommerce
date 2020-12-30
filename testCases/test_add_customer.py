@@ -38,11 +38,10 @@ class Test_add_new_customer:
         self.cp.select_tax_exempt(True)
         self.cp.set_customer_role()
         self.cp.click_save_button()
+        time.sleep(2)
         msg = self.driver.find_element(By.XPATH, "//div[@class='alert alert-success alert-dismissable']").text
         if msg == "The new customer has been added successfully.":
             self.logger.info("Test_add_new_customer test case passed")
             assert True
         else:
             self.logger.info("Test_add_new_customer test case failed")
-
-
